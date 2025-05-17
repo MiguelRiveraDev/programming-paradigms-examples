@@ -13,3 +13,4 @@ This project contains coding examples for the Programming Paradigms course.
                          them and compose them to build bigger computations.
 
 - FluentApi: Fluent api for collections
+- RefactorNulls: Exercise to refactor legacy code with nulls using Option
