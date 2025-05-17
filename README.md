@@ -9,3 +9,5 @@ This project contains coding examples for the Programming Paradigms course.
 
 - KVRepoLaws: Defines and checks laws for the KVRepo algebra
 
+- EffectSystemIntuition: Illustrates how to turn effectful computations into pure ones by suspending
+                         them and compose them to build bigger computations.
