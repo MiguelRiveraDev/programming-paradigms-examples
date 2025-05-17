@@ -5,4 +5,7 @@ This project contains coding examples for the Programming Paradigms course.
 - ExpressionsVsStatements: Illustrates referential transparency of pure computations vs 
                            statements and side effects
 
+- SideEffectComposition: Illustrates why side effects do not compose
+
 - KVRepoLaws: Defines and checks laws for the KVRepo algebra
+
