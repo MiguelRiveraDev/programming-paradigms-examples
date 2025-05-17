@@ -17,3 +17,7 @@ This project contains coding examples for the Programming Paradigms course.
 - RefactorNulls: Exercise to refactor legacy code with nulls using Option
 
 - TimeStampProblem: Refactor exercise around side effects and testability
+
+- WarehouseDomain: Domain modelling exercise
+
+- Recursion: 
