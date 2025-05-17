@@ -11,3 +11,5 @@ This project contains coding examples for the Programming Paradigms course.
 
 - EffectSystemIntuition: Illustrates how to turn effectful computations into pure ones by suspending
                          them and compose them to build bigger computations.
+
+- FluentApi: Fluent api for collections
