@@ -64,7 +64,8 @@ object KVRepoLawsMain extends App{
   assert(checkLawsForInMemoryRepo())
 
   // using generic check
-  val lawCheckResult = KVRepoLaws.checkLawsForRepo[String, Int](() =>  new InMemoryKVRepo[String, Int](),
+  val lawCheckResult = KVRepoLaws.checkLawsForRepo[String, Int](
+    () =>  new InMemoryKVRepo[String, Int](),
     () => RandomUtils.randomString(Random.nextInt(10)),
     () => Random.nextInt()
   )
