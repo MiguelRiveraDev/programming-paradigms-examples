@@ -20,4 +20,6 @@ This project contains coding examples for the Programming Paradigms course.
 
 - WarehouseDomain: Domain modelling exercise
 
+- TypeClass: Introducción a las type classes
+
 - Recursion: 
