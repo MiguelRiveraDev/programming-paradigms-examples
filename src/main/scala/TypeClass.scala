@@ -10,6 +10,7 @@ case class User(name: String, age: Int)
 case class House(address: String, price: BigDecimal)
 
 object JsonSerializableInstances {
+
   implicit val userInstance = new JsonSerializable[User] {
     override def toJson(v: User): String = s"{ ... }"
   }
@@ -57,6 +58,12 @@ object TypeClass {
   }
 }
 
+// - Open Closed principle: Si quiero que un tipo sea serializable a json ni lo toco
+// - Composition over inheritance. User no es un JsonSerializable semánticamente, uso herencia cuando no debería
+// - Puedes extender funcionalidad para tipos que no son tuyos
+// - AddHoc polymorphism: base on type resolution
+
+///////////////////////////////// Ejercicio
 trait Eq[A] {
   def eqv(x: A, y: A): Boolean
 }
@@ -72,11 +79,8 @@ object Monoid {
     list.foldLeft(m.empty)(m.combine)
   }
 }
+////////////////////////////////////////////////////////
 
-// - Open Closed principle
-// - Composition over inheritance. User no es un JsonSerializable semanticamente, uso herencia cuando no deberia
-// - Puedes extender funcionalidad para tipos que no son tuyos
-// - AddHoc polymorphism: base on type resolution
 
 
 object FilterFold {
