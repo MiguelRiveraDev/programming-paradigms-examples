@@ -23,3 +23,11 @@ This project contains coding examples for the Programming Paradigms course.
 - TypeClass: Introducción a las type classes
 
 - Recursion: 
+
+- Learning resources:
+  
+  - https://rockthejvm.com/ Code based video tutorials for Scala and FP
+  - https://www.manning.com/books/akka-in-action-second-edition Actor model in scala
+  - https://www.manning.com/books/functional-programming-in-scala-second-edition
+    Red book: Intro to functional thinking in scala
+  - https://www.blurb.de/b/9603882-category-theory-for-programmers-scala-edition-pape
