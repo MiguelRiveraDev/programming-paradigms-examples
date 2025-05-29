@@ -22,6 +22,8 @@ This project contains coding examples for the Programming Paradigms course.
 
 - TypeClass: Introducción a las type classes
 
+- MyList: Recursive data type
+
 - Recursion: 
 
 - Learning resources:
