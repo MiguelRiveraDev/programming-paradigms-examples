@@ -17,3 +17,19 @@ This project contains coding examples for the Programming Paradigms course.
 - RefactorNulls: Exercise to refactor legacy code with nulls using Option
 
 - TimeStampProblem: Refactor exercise around side effects and testability
+
+- WarehouseDomain: Domain modelling exercise
+
+- TypeClass: Introducción a las type classes
+
+- MyList: Recursive data type
+
+- Recursion: 
+
+- Learning resources:
+  
+  - https://rockthejvm.com/ Code based video tutorials for Scala and FP
+  - https://www.manning.com/books/akka-in-action-second-edition Actor model in scala
+  - https://www.manning.com/books/functional-programming-in-scala-second-edition
+    Red book: Intro to functional thinking in scala
+  - https://www.blurb.de/b/9603882-category-theory-for-programmers-scala-edition-pape

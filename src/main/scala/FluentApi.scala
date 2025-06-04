@@ -15,7 +15,7 @@ object Data {
     Box("box01", Dimensions(2,2,2), Product("ean01", 2, 3) :: Product("ean02", 3, 40) :: Nil),
     Box("box02", Dimensions(2,5,5), Product("ean04", 1, 54) :: Product("ean05", 30, 33) :: Product("ean06", 7, 1) :: Nil),
     Box("box03", Dimensions(6,3,2), Product("ean01", 2, 5) :: Product("ean02", 3, 10) :: Nil),
-    Box("box03", Dimensions(6,3,2), Nil),
+    Box("box04", Dimensions(6,3,2), Nil),
   )
 }
 
