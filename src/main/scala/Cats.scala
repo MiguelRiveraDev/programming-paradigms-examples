@@ -1,6 +1,21 @@
 object Cats {
 
 
+  case class IO[A]( f: () => A) {
+    def executeImpure():A = f()
+  }
+
+  val e: IO[Int] = IO{ () =>
+    Thread.sleep(10)
+    println("lhjksd")
+    23
+  }
+
+  //val f: IO[String] = e.map(x => x.toString)
+
+
+  e.executeImpure()
+  ////////////////////////////////////////////////////
   trait Functor[F[_]] {
     def pure[T](v: T): F[T]
     def map[A, B](fa: F[A])(f: A => B): F[B]
@@ -29,7 +44,7 @@ object Cats {
       ap(fb)(r) // Apply F[B => Z] to F[B] to get F[Z]
     }
 
-    def mapN[A, B, Z](fa: F[A], fb: F[B])(f: (A, B) => Z): F[Z] = ap(fb)(ap(fa)(pure(f.curried)))
+    //def mapN[A, B, Z](fa: F[A], fb: F[B])(f: (A, B) => Z): F[Z] = ap(fb)(ap(fa)(pure(f.curried)))
   }
 
 
