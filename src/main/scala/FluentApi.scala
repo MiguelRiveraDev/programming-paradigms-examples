@@ -20,8 +20,29 @@ object Data {
 }
 
 object FluentApi {
+
+  import Data._
+
   // 1- Filtrar cajas vacías
+  val nonEmptyBoxes: List[Box] = boxList.filter(_.products.nonEmpty)
+
   // 2- Obtener una lista de productos únicos. Lista de ean's
+  val uniqueEans: List[String] = boxList.flatMap(_.products.map(_.ean)).distinct
+
   // 3- Valor del stock de cada producto: Map[String, Int]
+  val stockValuePerProduct: Map[String, Int] =
+    boxList
+      .flatMap(_.products)
+      .groupBy(_.ean)
+      .view
+      .mapValues(products => products.map(p => p.price * p.units).sum)
+      .toMap
+
   // 4- La caja de mas valor
+  val mostValuableBox: Option[Box] =
+    boxList
+      .map(box => box -> box.products.map(p => p.price * p.units).sum)
+      .maxByOption(_._2)
+      .map(_._1)
 }
+
