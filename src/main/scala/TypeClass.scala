@@ -52,7 +52,7 @@ object TypeClass {
     s.toJson(element)
   }
 
-  def doSomething[T: JsonSerializable](element: T) :Unit = {
+  def doSomething2[T: JsonSerializable](element: T) :Unit = {
     val s = implicitly[JsonSerializable[T]]
     s.toJson(element)
   }
